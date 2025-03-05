@@ -54,18 +54,18 @@
             this.lblTitle.Text = "Person Details";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ctrlPersonCard1
+            // ctrlPersonCard
             // 
-            this.ctrlPersonCard.Location = new System.Drawing.Point(12, 100);
+            this.ctrlPersonCard.Location = new System.Drawing.Point(74, 96);
             this.ctrlPersonCard.Name = "ctrlPersonCard";
-            this.ctrlPersonCard.Size = new System.Drawing.Size(839, 300);
+            this.ctrlPersonCard.Size = new System.Drawing.Size(955, 300);
             this.ctrlPersonCard.TabIndex = 91;
             // 
             // fmShowPersonInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 433);
+            this.ClientSize = new System.Drawing.Size(1062, 500);
             this.Controls.Add(this.ctrlPersonCard);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
