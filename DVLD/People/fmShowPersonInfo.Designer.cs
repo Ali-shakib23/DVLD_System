@@ -60,6 +60,7 @@
             this.ctrlPersonCard.Name = "ctrlPersonCard";
             this.ctrlPersonCard.Size = new System.Drawing.Size(955, 300);
             this.ctrlPersonCard.TabIndex = 91;
+            this.ctrlPersonCard.Load += new System.EventHandler(this.ctrlPersonCard_Load);
             // 
             // fmShowPersonInfo
             // 

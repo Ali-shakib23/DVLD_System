@@ -75,6 +75,7 @@
             this.lblTitle.TabIndex = 74;
             this.lblTitle.Text = "Add New Person";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // groupBox1
             // 
@@ -113,6 +114,7 @@
             this.groupBox1.Size = new System.Drawing.Size(943, 444);
             this.groupBox1.TabIndex = 75;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // llRemoveImage
             // 

@@ -35,7 +35,7 @@
             this.lblUserID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ctrlPersonCardWithFilter1 = new DVLD.People.Controls.ctrlPersonCardWithFilter();
+            this.ctrlPersonCard = new DVLD.People.Controls.ctrlPersonCard();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
             // 
             this.lblIsActive.AutoSize = true;
             this.lblIsActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsActive.Location = new System.Drawing.Point(637, 37);
+            this.lblIsActive.Location = new System.Drawing.Point(683, 37);
             this.lblIsActive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIsActive.Name = "lblIsActive";
             this.lblIsActive.Size = new System.Drawing.Size(52, 29);
@@ -80,18 +80,19 @@
             // 
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(434, 37);
+            this.lblUserName.Location = new System.Drawing.Point(473, 37);
             this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(52, 29);
             this.lblUserName.TabIndex = 138;
             this.lblUserName.Text = "???";
+            this.lblUserName.Click += new System.EventHandler(this.lblUserName_Click);
             // 
             // lblUserID
             // 
             this.lblUserID.AutoSize = true;
             this.lblUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserID.Location = new System.Drawing.Point(238, 37);
+            this.lblUserID.Location = new System.Drawing.Point(265, 37);
             this.lblUserID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserID.Name = "lblUserID";
             this.lblUserID.Size = new System.Drawing.Size(52, 29);
@@ -120,21 +121,23 @@
             this.label1.TabIndex = 130;
             this.label1.Text = "Username:";
             // 
-            // ctrlPersonCardWithFilter1
+            // ctrlPersonCard
             // 
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(33, 16);
-            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(837, 399);
-            this.ctrlPersonCardWithFilter1.TabIndex = 3;
+            this.ctrlPersonCard.Location = new System.Drawing.Point(19, 17);
+            this.ctrlPersonCard.Name = "ctrlPersonCard";
+            this.ctrlPersonCard.Size = new System.Drawing.Size(881, 355);
+            this.ctrlPersonCard.TabIndex = 3;
+            this.ctrlPersonCard.Load += new System.EventHandler(this.ctrlPersonCard_Load);
             // 
             // ctrlUserCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ctrlPersonCardWithFilter1);
+            this.Controls.Add(this.ctrlPersonCard);
             this.Controls.Add(this.groupBox1);
             this.Name = "ctrlUserCard";
             this.Size = new System.Drawing.Size(918, 559);
+            this.Load += new System.EventHandler(this.ctrlUserCard_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -150,6 +153,6 @@
         private System.Windows.Forms.Label lblUserID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private People.Controls.ctrlPersonCardWithFilter ctrlPersonCardWithFilter1;
+        private People.Controls.ctrlPersonCard ctrlPersonCard;
     }
 }

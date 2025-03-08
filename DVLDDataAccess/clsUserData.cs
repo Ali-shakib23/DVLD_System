@@ -24,7 +24,7 @@ namespace DVLDDataAccess
 
             DataTable dataTable = new DataTable();
 
-            SqlCommand command = new SqlCommand("query", connection);
+            SqlCommand command = new SqlCommand(query, connection);
 
             try
             {
@@ -98,7 +98,7 @@ namespace DVLDDataAccess
         {
             bool isFound = false;
             SqlConnection connection = new SqlConnection(dbConnection.connectionString);
-            string query = @"SELECT * FROM USERS WHERE UserName = @UserName and Password = @Password";
+            string query = "SELECT * FROM Users WHERE Username = @UserName and Password = @Password;";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@UserName", UserName);

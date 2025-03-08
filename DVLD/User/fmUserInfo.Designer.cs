@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlUserCard1 = new DVLD.User.ctrlUserCard();
             this.btnClose = new System.Windows.Forms.Button();
+            this.ctrlUserCard = new DVLD.User.ctrlUserCard();
             this.SuspendLayout();
-            // 
-            // ctrlUserCard1
-            // 
-            this.ctrlUserCard1.Location = new System.Drawing.Point(-2, -2);
-            this.ctrlUserCard1.Name = "ctrlUserCard1";
-            this.ctrlUserCard1.Size = new System.Drawing.Size(932, 543);
-            this.ctrlUserCard1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -52,6 +45,15 @@
             this.btnClose.TabIndex = 17;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // ctrlUserCard
+            // 
+            this.ctrlUserCard.Location = new System.Drawing.Point(-2, -2);
+            this.ctrlUserCard.Name = "ctrlUserCard";
+            this.ctrlUserCard.Size = new System.Drawing.Size(932, 543);
+            this.ctrlUserCard.TabIndex = 0;
+            this.ctrlUserCard.Load += new System.EventHandler(this.ctrlUserCard1_Load);
             // 
             // fmUserInfo
             // 
@@ -59,7 +61,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 644);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.ctrlUserCard1);
+            this.Controls.Add(this.ctrlUserCard);
             this.Name = "fmUserInfo";
             this.Text = "fmUserInfo";
             this.Load += new System.EventHandler(this.fmUserInfo_Load);
@@ -69,7 +71,7 @@
 
         #endregion
 
-        private ctrlUserCard ctrlUserCard1;
+        private ctrlUserCard ctrlUserCard;
         private System.Windows.Forms.Button btnClose;
     }
 }

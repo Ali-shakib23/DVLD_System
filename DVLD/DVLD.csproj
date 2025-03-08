@@ -237,6 +237,7 @@
     <None Include="Resources\Male 512.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="User\rememberFile.txt" />
     <None Include="Resources\Save 32.png" />
     <None Include="Resources\Next 32.png" />
     <None Include="Resources\Next 64.png" />

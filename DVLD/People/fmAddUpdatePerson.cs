@@ -115,6 +115,7 @@ namespace DVLD.People
                 cbCountry.Items.Add(rows["CountryName"]);
             }
         }
+        
 
         private void fmAddUpdatePerson_Load(object sender, EventArgs e)
         {
@@ -165,6 +166,17 @@ namespace DVLD.People
             {
                 MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

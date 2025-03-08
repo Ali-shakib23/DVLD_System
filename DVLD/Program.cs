@@ -16,7 +16,7 @@ namespace DVLD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new People.fmListPerson());
+            Application.Run(new Login.fmLogin());
         }
     }
 }

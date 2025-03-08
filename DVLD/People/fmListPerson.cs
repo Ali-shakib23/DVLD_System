@@ -44,7 +44,7 @@ namespace DVLD.People
             dgvPeople.DataSource = _dtPeople;
             lblRecordsCount.Text = _dtAllPeople.Rows.Count.ToString();
 
-    }
+        }
 
         private void fmListPerson_Load(object sender, EventArgs e)
         {
@@ -196,7 +196,7 @@ namespace DVLD.People
 
         }
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void deleteToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             if((MessageBox.Show("Are you sure you want to delete Person [" + dgvPeople.CurrentRow.Cells[0].Value + "]", "Confirm Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK))
             {
@@ -206,7 +206,38 @@ namespace DVLD.People
 
                 }
             }
+
+            refreshPeopleList();
             
         }
+
+        private void cmsPeople_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void cmsUsers_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        //private void showDetailsToolStripMenuItem_Click_1(object sender, EventArgs e)
+        //{
+        //    int PersonId = (int)dgvPeople.CurrentRow.Cells[0].Value;
+        //    fmShowPersonInfo ShowPerson = new fmShowPersonInfo(PersonId);
+        //    ShowPerson.Show();
+        //}
     }
 }

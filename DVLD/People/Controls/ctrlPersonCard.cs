@@ -54,7 +54,8 @@ namespace DVLD.People.Controls
             lblEmail.Text = _Person.Email;
             lblPhone.Text = _Person.Phone;
             lblDateOfBirth.Text = _Person.DateOfBirth.ToShortDateString();
-            lblAddress.Text = clsCountry.Find(_Person.NationalityCountryID).CountryName;
+            lblAddress.Text = _Person.Address.ToString();
+            lblCountry.Text = clsCountry.Find(_Person.NationalityCountryID).CountryName;
 
         }
         public ctrlPersonCard()
